@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Calculadora de Média</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+   <div class="container">
+    <h1 class="page-title">Calculadora de média</h1>
+    <p class="page-subtitle">Descubra qual a sua média</p>
+
+    <!--Medias dos Bimestres-->
+    <div class="notas">
+      <br><label>Nota do 1º Bimestre</label>
+      <input type="number" min="0" max="10" id="nota1"><br>
+      <label>Nota do 2º Bimestre</label>
+      <input type="number" min="0" max="10" id="nota2"><br>
+      <label>Nota do 3º Bimestre</label>
+      <input type="number" min="0" max="10" id="nota3"><br>
+      <label>Nota do 4º Bimestre</label>
+      <input type="number" min="0" max="10" id="nota4"><br>
+      <br><button type="submit" onclick="calculoMedia()">Calcular</button>
+      <button type="reset" onclick="resetNotas()">Limpar Notas</button>
+    </div>
+
+    <!--Resultado-->
+    <div class="resultado-final">
+      <h3 id="resultado"></h3>
+      <h3 id="aprovacao"></h3>
+    </div>
+
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
